@@ -18,7 +18,7 @@ def display_metrics(filtered_df):
     grand_total_2020 = filtered_df[filtered_df['year'] == 2020]['grand_total'].sum()
     grand_total_change = grand_total_2020 - grand_total_2019
     grand_total_change_percentage = (grand_total_change / grand_total_2019) * 100 if grand_total_2019 != 0 else 0
-    grand_total_change_percentage = grand_total_change_percentage.round()
+    #grand_total_change_percentage = grand_total_change_percentage.round()
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
